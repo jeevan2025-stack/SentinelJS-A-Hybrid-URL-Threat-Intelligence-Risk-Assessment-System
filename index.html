@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SentinelJS | Security Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Sentinel Scanner</h1>
+        <p>AI-Powered URL Threat Intelligence</p>
+        
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="Enter URL to scan...">
+            <button onclick="scanURL()">Analyze</button>
+        </div>
+
+        <div id="resultCard" class="card hidden">
+            <h2 id="verdict">Verdict: Safe</h2>
+            <div class="meter"><div id="scoreBar"></div></div>
+            <p>Risk Score: <span id="scoreText">0</span>%</p>
+            <p>Entropy: <span id="entropyText">0</span></p>
+            <ul id="warningList"></ul>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
